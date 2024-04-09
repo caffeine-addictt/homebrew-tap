@@ -11,10 +11,10 @@ brew tap caffeine-addictt/tap
 
 ```sh
 # Install
-brew install caffeine-addictt/tap/BINARY_NAME
+brew install caffeine-addictt/tap/$BINARY_NAME
 
 # Upgrade
-brew upgrade caffeine-addictt/tap/BINARY_NAME
+brew upgrade caffeine-addictt/tap/$BINARY_NAME
 ```
 
 ## Binaries
