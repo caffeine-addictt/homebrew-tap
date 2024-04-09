@@ -11,7 +11,7 @@ class VideoManager < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/caffeine-addictt/video-manager/releases/download/v0.0.5/video-manager_0.0.5_darwin_amd64.tar.gz"
-      sha256 "5138ebb5cb7a37458c563fa0115ae41a072a7052a14114cc524d7dcb3e6e5446"
+      sha256 "68d65eabb7e56d434b97fecee0146785b0314915b7e15a85c721048a1e1d4e61"
 
       def install
         bin.install "video-manager"
@@ -19,7 +19,7 @@ class VideoManager < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/caffeine-addictt/video-manager/releases/download/v0.0.5/video-manager_0.0.5_darwin_arm64.tar.gz"
-      sha256 "7abc79f2974eee2762f59e3b3ef912f30b9940b6abf313ea0a143123b131aad2"
+      sha256 "b419cba060f15dd939dd10eba7e032d1df0e2f994ce203a270330cfd10218401"
 
       def install
         bin.install "video-manager"
@@ -30,7 +30,7 @@ class VideoManager < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/caffeine-addictt/video-manager/releases/download/v0.0.5/video-manager_0.0.5_linux_amd64.tar.gz"
-      sha256 "b851469e1829c65df3e29e1f42cb0e664ef6bc88ff837e871a2bc9a26e23eed8"
+      sha256 "cef24ddd46504a3d63324d797c3ee7e0f8673da2ceb13e0221ceca645dc2d1c7"
 
       def install
         bin.install "video-manager"
@@ -38,7 +38,7 @@ class VideoManager < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/caffeine-addictt/video-manager/releases/download/v0.0.5/video-manager_0.0.5_linux_arm64.tar.gz"
-      sha256 "864805ca0d05ae56f8e7a6b0eaa997745b29c039b4490ea2aa2d1975766308b6"
+      sha256 "0f4f10f719a9de6432c9efa1721272d4e3720ac337439ab2305b5ea0f1594b34"
 
       def install
         bin.install "video-manager"
