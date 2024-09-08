@@ -19,6 +19,7 @@ brew upgrade caffeine-addictt/tap/$BINARY_NAME
 
 ## Binaries
 
+* [waku](https://github.com/caffeine-addictt/waku)
 * [video-manager](https://github.com/caffeine-addictt/video-manager)
 
 ## License
