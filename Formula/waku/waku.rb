@@ -11,7 +11,7 @@ class Waku < Formula
   on_macos do
     on_intel do
       url "https://github.com/caffeine-addictt/waku/releases/download/v0.2.0/waku_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f9347a6c6511abe13eb8f9eb05e815a5db9623e17432ef6403a91bbe8674c52f"
+      sha256 "8087fed47caab68913d1ea755571956ee09cd7af6241ee9a7b6ee6b1a3d1f211"
 
       def install
         bin.install "waku"
@@ -19,7 +19,7 @@ class Waku < Formula
     end
     on_arm do
       url "https://github.com/caffeine-addictt/waku/releases/download/v0.2.0/waku_0.2.0_darwin_arm64.tar.gz"
-      sha256 "4594730d32fc9c242bef52d1240c145449df862a82e4034104f9a16522997d5a"
+      sha256 "f7e885961628c6afaa69832215b56dcc1e6301693955775c4b4aa2e43375f94f"
 
       def install
         bin.install "waku"
@@ -31,7 +31,7 @@ class Waku < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/caffeine-addictt/waku/releases/download/v0.2.0/waku_0.2.0_linux_amd64.tar.gz"
-        sha256 "b7755baeeb1d0bf1d5a507eeb2dbfbc476bc4d40db40c9fcb05dfff1e86f1377"
+        sha256 "d8f508967d62e613944438502b9b04f37f92e116808457087b7dd776de5a28a9"
 
         def install
           bin.install "waku"
@@ -41,7 +41,7 @@ class Waku < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/caffeine-addictt/waku/releases/download/v0.2.0/waku_0.2.0_linux_arm64.tar.gz"
-        sha256 "7feb0832fc8d745d4e381a0e9c06f505f600ee195f46b04d86a0accca071c4bd"
+        sha256 "83e9cc9cb55d72859040394d01a44acea894738d6777fcc0491b78ab6bf236b1"
 
         def install
           bin.install "waku"
