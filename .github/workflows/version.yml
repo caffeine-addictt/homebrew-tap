@@ -5,6 +5,7 @@ on:
       - "Formula/**"
     branches-ignore:
       - main
+  workflow_dispatch:
 
 jobs:
   version:
