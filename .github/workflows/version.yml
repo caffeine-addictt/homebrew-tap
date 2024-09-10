@@ -5,6 +5,7 @@ on:
       - "Formula/**"
     branches-ignore:
       - main
+  workflow_dispatch:
 
 jobs:
   version:
@@ -37,7 +38,7 @@ jobs:
           echo "CHANGED=${CHANGED}" >> $GITHUB_ENV
 
       - name: Auto version formulas
-        if: env.CHANGED != ""
+        if: env.CHANGED
         run: |
           for FORMULA_PATH in $CHANGED; do
             FORMULA_NAME=$(basename "$FORMULA_PATH" .rb)
@@ -62,17 +63,17 @@ jobs:
           done
 
       - name: Commit versioned formulas
-        if: env.CHANGED != ''
+        if: env.CHANGED
         run: |
           git commit -m "Auto versioned formula(s): ${{ env.CHANGED }}"
 
       - name: Push
-        if: env.CHANGED != ''
+        if: env.CHANGED
         run: |
           git push origin "${GITHUB_REF##*/}"
 
       - name: PR to main
-        if: env.CHANGED != ''
+        if: env.CHANGED
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
