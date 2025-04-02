@@ -5,15 +5,15 @@
 class Waku < Formula
   desc "A simple template repository generator. Lets make starting new projects feel like a breeze again!"
   homepage "https://github.com/caffeine-addictt/waku"
-  version "0.8.0"
+  version "0.8.1"
   license "AGPL-3.0"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.0/waku_Darwin_x86_64.tar.gz"
-      sha256 "ec646121853a662aa8eef56be3d886ea56ff0326629f3b819eb5600719b33b26"
+      url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.1/waku_Darwin_x86_64.tar.gz"
+      sha256 "51d6858a6d5e3ce902a514ef6c065f26025a8b8aa5bffacaa3668a36924fb553"
 
       def install
         bin.install "waku"
@@ -24,8 +24,8 @@ class Waku < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.0/waku_Darwin_arm64.tar.gz"
-      sha256 "67397c1aebe0e636fc6dd06c9e874cb538a0d083e2a94848c68bf21a16a627af"
+      url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.1/waku_Darwin_arm64.tar.gz"
+      sha256 "115c1773842919eef98dbafdd149b575a40d887161dd6a41b87b64c36bafaf81"
 
       def install
         bin.install "waku"
@@ -40,8 +40,8 @@ class Waku < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.0/waku_Linux_x86_64.tar.gz"
-        sha256 "11dcbabbe8cef3bcb413137cbdf07a0580291c0dc0ffbf06f90ff800e5de50e6"
+        url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.1/waku_Linux_x86_64.tar.gz"
+        sha256 "0a08ab02391b3fa5c08ac96745d6c5b3add271d6a21d1d581358b480db538173"
 
         def install
           bin.install "waku"
@@ -54,8 +54,8 @@ class Waku < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.0/waku_Linux_arm64.tar.gz"
-        sha256 "50ab70bc6f4582e26ad7335cc6740eafd98e9c1c8192e869b5f9b5a88f325ca3"
+        url "https://github.com/caffeine-addictt/waku/releases/download/v0.8.1/waku_Linux_arm64.tar.gz"
+        sha256 "999237da0b1996eab9db251622ea062c6b5089577ababfdd3ae2e5517cf18ca8"
 
         def install
           bin.install "waku"
