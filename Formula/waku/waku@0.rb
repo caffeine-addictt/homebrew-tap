@@ -20,22 +20,22 @@ cask "waku" do
   on_macos do
     on_intel do
       url "https://github.com/caffeine-addictt/waku/releases/download/v#{version}/waku_Darwin_x86_64.tar.gz"
-      sha256 "1795c8b861ee7b792b14aea3b5f300750ecc10b6517724e2fdd14b4bf2f78b2c"
+      sha256 "3de9ead697006c77231b2776ddef2afcaba7f685c0543b91fe0f28adf25d4613"
     end
     on_arm do
       url "https://github.com/caffeine-addictt/waku/releases/download/v#{version}/waku_Darwin_arm64.tar.gz"
-      sha256 "d0027e8a9133031767fe95c1d6900af9150997ac3cc48abe5e2cdfae889ba9a7"
+      sha256 "451c639cf7fdfa2dac91bbd5c095b99288fda023f778004483b0427dd387eaba"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/caffeine-addictt/waku/releases/download/v#{version}/waku_Linux_x86_64.tar.gz"
-      sha256 "36edaf4499672140e2dea44be4ea07a269f61ce856890a9fe735c055b62a1cdd"
+      sha256 "59cd62021bff19db727657cdedf6c5e7a38c6b24fcda8912dba50bef967150dc"
     end
     on_arm do
       url "https://github.com/caffeine-addictt/waku/releases/download/v#{version}/waku_Linux_arm64.tar.gz"
-      sha256 "48bcc7805b38480bbcf0288e18baa60e6258524997618793653ae4f65fea2151"
+      sha256 "c32d0af91f90cabe3b0f4a99c5574aad9ad338ea0018ec1eb70f70d3cdaedad4"
     end
   end
 
